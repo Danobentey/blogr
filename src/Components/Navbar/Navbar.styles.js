@@ -1,31 +1,73 @@
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
 
 
 
 export const Nav = styled.nav`
 background: hsl(353, 100%, 62%);
-`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+`;
 
 export const LogoAccordion = styled.div`
-`
+display: flex;
+flex-directiom: row;
+justify-content: space-between;
+align-items: center;
+`;
+
+
 
 export const NavLogo = styled.div`
-img {
+
+& > img {
     margin-left: 18px;
 }
-`
+`;
+
+
 
 export const NavAccordion = styled.div`
 display: flex;
 max-width: 600px;
-margin: 2rem auto;
-
-`
+`;
 
 export const CTA = styled.div`
+display: flex;
+flex-direction: row;
+`;
 
+
+export const Button = styled.button`
+display: inline-block;
+padding: 0.5rem 0;
+margin: 0.5rem 1rem;
+width: 7rem;
+background: transparent;
+color: white;
+border: transparent;
+cursor: pointer;
+
+${props => props.primary && css`
+    background: white;
+    color: hsl(355, 100%, 74%);
+    border-radius: 15px;
+
+    :hover {
+        background: hsl(355, 100%, 74%);
+        color: hsl(0, 0%, 100%);
+    }
+  `}
+`;
+
+export const Intro = styled.div`
+background: hsl(353, 100%, 62%);
+display: block;
+align-items: center;
 `
+
 
 export const Title = styled.div`
 display: flex;
@@ -39,6 +81,8 @@ color: #fff;
 export const Content = styled.div`
 padding: 1rem;
 color: #fff;
-
+display: block;
+text-align: center;
+max-width: 50px;
 `
 

@@ -1,38 +1,20 @@
 import React from "react";
-import Accordion from "../Accordion";
+import Accordion from "../Accordion/Accordion";
 import {
   Nav,
   LogoAccordion,
   NavLogo,
   NavAccordion,
   CTA,
+  Button,
+  Intro
 } from "./Navbar.styles";
 import Logo from "../../Assets/images/logo.svg";
+import { accordionData } from "../Accordion/accordionData";
+
+
 
 const Navbar = () => {
-  const accordionData = [
-    {
-      title: "Product",
-      content: `{Overview},
-                      {Pricing}
-                      Marketplace 
-                      Features
-                      Integrations`,
-    },
-    {
-      title: "Company",
-      content: `About
-                      Team
-                      Blog
-                      Careers`,
-    },
-    {
-      title: "Product",
-      content: `  Contact
-                        Newsletter
-                        LinkedIn`,
-    },
-  ];
 
   return (
     <>
@@ -47,8 +29,19 @@ const Navbar = () => {
             ))}
           </NavAccordion>
         </LogoAccordion>
-        <CTA></CTA>
+        <CTA>
+            <Button>
+                Login
+            </Button>
+            <Button primary>Sign Up</Button>
+        </CTA>
       </Nav>
+      <Intro>
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <Button primary>Start for Free</Button>
+        <Button>Learn More</Button>
+      </Intro>
     </>
   );
 };
