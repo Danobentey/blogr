@@ -1,6 +1,7 @@
 import React from "react";
 import Accordion from "../Accordion/Accordion";
 import {
+  Wrapper,
   Nav,
   LogoAccordion,
   NavLogo,
@@ -18,6 +19,7 @@ const Navbar = () => {
 
   return (
     <>
+    <Wrapper>
       <Nav>
         <LogoAccordion>
           <NavLogo>
@@ -42,6 +44,7 @@ const Navbar = () => {
         <Button primary>Start for Free</Button>
         <Button>Learn More</Button>
       </Intro>
+      </Wrapper>
     </>
   );
 };

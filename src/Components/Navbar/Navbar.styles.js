@@ -1,10 +1,15 @@
 import styled, {css} from 'styled-components'
 
 
+export const Wrapper = styled.div`
+// background: hsl(353, 100%, 62%);
+background-image: url(../../Assets/images/bg-pattern-intro-desktop.svg);
+height: 90vh;
+`;
+
 
 
 export const Nav = styled.nav`
-background: hsl(353, 100%, 62%);
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -63,7 +68,6 @@ ${props => props.primary && css`
 `;
 
 export const Intro = styled.div`
-background: hsl(353, 100%, 62%);
 display: block;
 align-items: center;
 `
