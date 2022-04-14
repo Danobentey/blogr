@@ -39,10 +39,14 @@ const Navbar = () => {
         </CTA>
       </Nav>
       <Intro>
-        <h1>A modern publishing platform</h1>
-        <p>Grow your audience and build your online brand</p>
-        <Button primary>Start for Free</Button>
-        <Button>Learn More</Button>
+        <span>
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+        </span>
+        <div>
+          <Button primary>Start for Free</Button>
+          <Button secondary>Learn More</Button>
+        </div>
       </Intro>
       </Wrapper>
     </>
