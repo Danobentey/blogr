@@ -14,6 +14,10 @@ justify-content: space-between;
 h1 {
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 
 
@@ -31,6 +35,10 @@ height: 90vh;
 div {
     margin-top: 13%;
 }
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 
 // export const SecondSectionText = styled.div`
@@ -46,4 +54,8 @@ margin-top: 5%;
 display: flex;
 justify-content: space-between;
 height: 90vh;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;

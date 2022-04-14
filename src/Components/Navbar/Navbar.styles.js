@@ -18,12 +18,12 @@ align-items: center;
 
 
 
-export const LogoAccordion = styled.div`
-display: flex;
-flex-directiom: row;
-justify-content: space-between;
-align-items: center;
-`;
+// export const LogoAccordion = styled.div`
+// display: flex;
+// flex-directiom: row;
+// justify-content: space-between;
+// align-items: center;
+// `;
 
 
 
@@ -36,9 +36,47 @@ export const NavLogo = styled.div`
 
 
 
+export const MobileMenu = styled.div`
+display: none;
+
+@media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 68%);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+`;
+
+export const NavMenu = styled.ul`
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center;
+
+@media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: ${({click}) => (click ? 0 : '-100%')};
+    opacity: 1;
+    transition: all 0.5s ease;
+    background: #fff;
+}
+`;
+
 export const NavAccordion = styled.div`
 display: flex;
 max-width: 600px;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 
 
@@ -46,6 +84,10 @@ max-width: 600px;
 export const CTA = styled.div`
 display: flex;
 flex-direction: row;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
 `;
 
 
