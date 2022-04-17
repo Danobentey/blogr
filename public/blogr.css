@@ -1,0 +1,111 @@
+body {
+  width: 375px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.top_bar {
+  background-image: url("/src/Assets/images/bg-pattern-intro-mobile.svg"); 
+  background-size: 250%;
+  background-position:  30% 50%;
+  /* background-position-x: 30%; */
+  background-repeat: no-repeat;
+  background-color: hsl(356, 100%, 66%);
+  width: 100%;
+  height : 725px;
+  border: solid;
+  border-radius: 0 0 0 150px;
+}
+
+.top_bar > .logo {
+  display: flex;
+  margin: 90px 20px ;
+  justify-content: space-between;
+  
+}
+.hamburg {
+  height: 25px;
+  display: inline-block;
+  align-self: center;
+  
+}
+
+.top_text {
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+.top_text >h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.top_text >p {
+  font-size: 23px;
+  font-weight: lighter;
+}
+.top_text > button,input {
+  margin-top: 60px;
+  width: 160px;
+  height: 60px;
+  border-radius: 100px;
+  border: white;
+  color: hsl(356, 65%, 66%);
+  font-size: 20px;
+  font-weight: 700;
+}
+.top_text > button:hover,input:hover {
+  color: white;
+  background: none;
+  border: 1px solid ;
+} 
+h3 {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 30px;
+  color: hsl(237, 23%, 32%);
+}
+
+.picture {
+  background-image: url("/src/Assets/images/bg-pattern-circles.svg");
+  background: no-repeat ;
+  width: 150px;
+  justify-content: stretch;
+}
+
+.body {
+  color: hsl(237, 23%, 32%);
+  font-size: 16px;
+  text-align: center;
+}
+
+.body > h3,h2 {
+  font-size: 30px;
+}
+
+.bottom {
+margin-top: 250px;
+}
+.bottom_bar {
+  position: relative;
+  background-image: url("/src/Assets/images/bg-pattern-circles.svg"); 
+  background-size: 155%;
+  background-position-x: center;
+  background-position-y: -250px;
+  /* background-position-x: 30%; */
+  background-repeat: no-repeat;
+  background-color: hsl(237, 17%, 21%);
+  width: 100%;
+  height : 525px;
+  border: solid;
+  border-radius: 0 150px 0 150px;
+  
+  color: white;
+  text-align: center;
+}
+.phones {
+  position:absolute;
+  top: -180px;
+  left: 15px;
+  width: 350px;
+}
+.bottom_text> h1 {
+  margin-top: 180px;
+}
