@@ -12,10 +12,8 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="stylesheet" href="blogr.css">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->   
+    <!-- <script src="blogr.js"></script> -->
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,22 +21,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Dinny</title>
   </head>
   <body>
-    <!-- <div class="top_bar">
+    <div class="top_bar">
       <div class="logo">
         <img src="/src/Assets/images/logo.svg" alt="Blogr">
         <img src="/src/Assets/images/icon-hamburger.svg"  class="hamburg"alt="">
+      </div>
+
+      <div class="dropdown">
+
+       <ul class="drop">Product <img src="/src/Assets/images/icon-arrow-dark.svg" alt="down-arrow"> </ul> 
+
+        <li class="down"></li>
+        <li class="down"></li>
+        <li class="down"></li>
+          
+       <ul class="drop">Company <img src="/src/Assets/images/icon-arrow-dark.svg" alt="down-arrow"> </ul>
+
+        <li class="down"></li>
+        <li class="down"></li>
+        <li class="down"></li>
+          
+       <ul class="drop">Connect <img src="/src/Assets/images/icon-arrow-dark.svg" alt="down-arrow"> </ul>
+        <!-- <div id="down1" > -->
+          <li id="down">Contact</li>
+          <li id="down">Newsletter</li>
+          <li id="down">LinkedIn</li>
+        <!-- </div> -->
+          <hr>
+       <ul id="login">Login</ul>
+       <ul id="signup">Sign Up</ul>
+
       </div>
 
       <div class="top_text">
@@ -61,12 +77,15 @@
         <h2 class="intro"> Introducing an extensible editor </h2>
         <p class="words1">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores sunt voluptate nostrum veniam provident adipisci error numquam qui.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas harum blanditiis ratione exercitationem porro nihil placeat! Ab fugit quasi doloremque alias temporibus. Dolor quam natus ea consectetur impedit commodi soluta!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque aspernatur corporis quia iste ducimus, soluta inventore explicabo ab, perferendis placeat ut at tempora in dicta cum assumenda quod magnam?        
         </p>
         <h2 class="robust"> Robust content management</h2>
         <p class="words2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt asperiores sunt voluptate nostrum veniam provident adipisci error numquam qui.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam laudantium, aliquid dolorum error nesciunt deleniti. Facilis vero quos temporibus quaerat reprehenderit. Consequuntur saepe voluptas distinctio soluta nisi sequi incidunt iste?
         </p>
-     </div> -->
+     </div>
      
      <div class="bottom">
        <div class="bottom_bar">
@@ -76,10 +95,46 @@
          <div class="bottom_text">
            <h1>State of the Art Infrastructure</h1>
            <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your reader are, keeping your site cometitive.</p>
-          </div>
+         </div>
        </div>
      </div> 
 
+      <img class="bottom_laptop" width="475px" src="/src/Assets/images/illustration-laptop-mobile.svg" alt="">
+     <div class="last_text">
+       <h1>Free, open, simple</h1>
+       <p>
+         Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds,
+         social media integration, third-party commenting tools and work seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+       </p>
+
+       <h1>Powerful tooling</h1>
+       <p>
+         Batteries imcluded. We built a simple and staightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+       </p>
+     </div>
+
+     <div class="last_bar">
+       <h1>Blogr</h1>
+
+       <h3>Product</h3>
+       <P>Overview</P>
+       <P>Pricing</P>
+       <P>Marketplace</P>
+       <P>Features</P>
+       <P>Integrations</P>
+
+       <h3>Company</h3>
+       <P>About</P>
+       <P>Team</P>
+       <P>Blog</P>
+
+       <h3>Connect</h3>
+       <P>Careers</P>
+       <P>Contact</P>
+       <P>Newsletter</P>
+       <P>LinkedIn</P>
+     </div>
+
     </div>
-  </body>
-</html>
+
+ </html>
